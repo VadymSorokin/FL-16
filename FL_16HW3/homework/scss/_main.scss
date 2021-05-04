@@ -1,0 +1,193 @@
+// Write your styles here
+@mixin border-radius($border-radius: 3px){
+	border-radius: $border-radius;
+}
+@mixin link-decoration($color:white){
+	color:$color;
+}
+	
+body{
+	font-family: $font-sans;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: map-get($map-section-color, body-bg-color);
+}
+a{
+	@include link-decoration(white);
+}
+
+button{
+	font-family: $font-hind;
+	color: #fff;
+	background-color: map-get($map-section-color, btn-color);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 6px 42px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.landing-logo{
+	color: map-get($map-section-color, title-color);
+	>img,
+	>p{
+		display: inline-block;
+	}
+	>p{
+		text-align: center;
+		font-size: 24px;
+		line-height: 30px;
+		margin:0 0 0 10px;
+		>span{
+			display: block;
+			font-size: 12px;
+		}
+	}
+}
+
+.header{
+	font-family: $font-sans;
+	margin: 0 auto;
+	padding: 1rem 12rem 5rem 12rem;
+	background-image: $background-image;
+	background-size: cover;
+	background-position: left;
+	max-width: $container-width;
+	border-radius: 100% 0% 100% 0%/0% 261% 137% 100%;
+
+	&-wrap{
+		max-width: 650px;
+	}
+	&_heading{
+		font-size: 72px;
+		line-height: 72px;
+		font-weight: bold;
+		margin: 48px 0;
+		color: map-get($map-section-color, title-color);
+		&::selection{
+			color: map-get($map-section-color, selection-color);
+			background-color: map-get($map-section-color, selection-bg-color);
+		}
+	}
+	&_text{
+		font-size: 20px;
+		margin: 0 0 67px 0;
+		color: map-get($map-section-color, title-color);
+	}
+	&_button{
+		@include border-radius(4px);
+		@extend button;
+	}
+}
+.login{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px 0 0 184px;
+	text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+.section{
+	position: relative;
+	padding: 60px 190px;
+	max-width: $container-width;
+	margin: 0 auto;
+	background-color: map-get($map-section-color, main-bg-color);
+
+	&_link{
+		@extend .login;
+		font-size: 18px;
+		font-weight: bold;
+		color:map-get($map-section-color, txt-color);
+		margin: 0;
+	}
+	&_text{
+		text-align: center;
+		font-size: 64px;
+		font-weight: bold;
+		margin-top: 0;
+		color:map-get($map-section-color, title-color);
+		&::selection{
+			color: map-get($map-section-color, selection-color);
+			background-color: map-get($map-section-color, selection-bg-color);
+		}
+}
+
+	&_card{
+		&_wrap{
+			max-width: $card-wrap-width;
+			padding: 0 60px 120px 60px;
+		}
+
+		@include border-radius(6px);
+		background-color: map-get($map-section-color, section-bg-color);
+		color: map-get($map-section-color, txt-color);
+		display: flex;
+		padding: 16px;
+		margin: 32px 0;
+
+		&_img{
+			flex-basis: 35%;
+		}
+
+		&_right_container{
+			flex-basis: 50%;
+			text-align: center;
+			margin: 0 auto 32px auto;
+		}
+
+		&_heading{
+			font-size: 32px;
+			color:map-get($map-section-color, heading-title-color);
+		}
+		&_text{
+			font-size: 12px;
+		}
+	}
+	&_banner{
+		@include border-radius(4px);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-image: map-get($map-section-color, banner-gradient);
+		max-width: 1600px;
+		margin-bottom: -115px;
+
+		&_heading{
+			@extend .section_card_heading;
+			color:map-get($map-section-color, title-color);
+			margin: 16px 0 0 0;
+			&::selection{
+				color: map-get($map-section-color, selection-color);
+				background-color: map-get($map-section-color, selection-bg-color);
+			}
+		}
+		&_button{
+			@include border-radius(4px);
+			@extend button;
+			height: 60px;
+		}
+		&_text{
+			@extend .section_card_text;
+			color: map-get($map-section-color, txt-color);
+			}
+	}
+}
+.footer{
+	&-wrap{
+		background-color:map-get($map-section-color, footer-bg-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: $container-width;
+		color: map-get($map-section-color, txt-color);
+		margin: 0 auto;
+		padding: 100px 32px 32px 32px;
+	}
+	&_logo.landing-logo{
+		color: map-get($map-section-color, logo-bottom-color);
+	}
+	&_text{
+		max-width: 324px;
+	}
+}

@@ -1,0 +1,175 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+a {
+  color: white;
+}
+
+button, .header_button, .section_banner_button {
+  font-family: "Hind", sans-serif;
+  color: #fff;
+  background-color: #699900;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 42px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing-logo {
+  color: #000;
+}
+.landing-logo > img,
+.landing-logo > p {
+  display: inline-block;
+}
+.landing-logo > p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 0 10px;
+}
+.landing-logo > p > span {
+  display: block;
+  font-size: 12px;
+}
+
+.header {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0 auto;
+  padding: 1rem 12rem 5rem 12rem;
+  background-image: url(../img/m-h-day.jpg);
+  background-size: cover;
+  background-position: left;
+  max-width: 1600px;
+  border-radius: 100% 0% 100% 0%/0% 261% 137% 100%;
+}
+.header-wrap {
+  max-width: 650px;
+}
+.header_heading {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: bold;
+  margin: 48px 0;
+  color: #000;
+}
+.header_heading::selection {
+  color: #000;
+  background-color: #14a1c8;
+}
+.header_text {
+  font-size: 20px;
+  margin: 0 0 67px 0;
+  color: #000;
+}
+.header_button {
+  border-radius: 4px;
+}
+
+.login, .section_link {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0 0 184px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+
+.section {
+  position: relative;
+  padding: 60px 190px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.section_link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #878c9a;
+  margin: 0;
+}
+.section_text {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #000;
+}
+.section_text::selection {
+  color: #000;
+  background-color: #14a1c8;
+}
+.section_card {
+  border-radius: 6px;
+  background-color: #21232e;
+  color: #878c9a;
+  display: flex;
+  padding: 16px;
+  margin: 32px 0;
+}
+.section_card_wrap {
+  max-width: 1600px;
+  padding: 0 60px 120px 60px;
+}
+.section_card_img {
+  flex-basis: 35%;
+}
+.section_card_right_container {
+  flex-basis: 50%;
+  text-align: center;
+  margin: 0 auto 32px auto;
+}
+.section_card_heading, .section_banner_heading {
+  font-size: 32px;
+  color: #fff;
+}
+.section_card_text, .section_banner_text {
+  font-size: 12px;
+}
+.section_banner {
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, #629217, #00945d, #008da8, #007eda, #2e5cd3);
+  max-width: 1600px;
+  margin-bottom: -115px;
+}
+.section_banner_heading {
+  color: #000;
+  margin: 16px 0 0 0;
+}
+.section_banner_heading::selection {
+  color: #000;
+  background-color: #14a1c8;
+}
+.section_banner_button {
+  border-radius: 4px;
+  height: 60px;
+}
+.section_banner_text {
+  color: #878c9a;
+}
+
+.footer-wrap {
+  background-color: #21232e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  color: #878c9a;
+  margin: 0 auto;
+  padding: 100px 32px 32px 32px;
+}
+.footer_logo.landing-logo {
+  color: #c0c1cb;
+}
+.footer_text {
+  max-width: 324px;
+}
