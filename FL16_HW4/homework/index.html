@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layouts</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Your code goes here -->
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__top">
+        <div class="header__logo logo"><a href="https://gitlab.com/VadymSorokin" target="_blank">black & white</a></div>
+        <nav class="header__nav_menu nav_menu">
+          <ul class="header__nav_menu_list">
+            <li class="header__nav_menu_item menu_item"><a href="#" class="menu_item_link">home</a></li>
+            <li class="header__nav_menu_item menu_item"><a href="#" class="menu_item_link">about</a></li>
+            <li class="header__nav_menu_item menu_item"><a href="#" class="menu_item_link">vacancies</a></li>
+            <li class="header__nav_menu_item menu_item"><a href="#" class="menu_item_link">shop</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__main">
+        <h1 class="header__title">black <span>&</span> white</h1>
+        <p class="header__text">an original brand since 1965</p>
+        <button class="header__button">show more</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container ">
+      <aside class="aside">
+        <p class="aside__text aside__text_style1">Lorem ipsum dolor,consectetur adipisicing. Aenean <b>commodo
+            ligula</b> eget dolor</p>
+        <p class="aside__text aside__text_style2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis paturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+          enim.</p>
+      </aside>
+      <div class="article">
+        <h2 class="article__title">read some of our <span>featured article</span></h2>
+        <div class="article__block">
+          <div class="article__view article__view_odd">
+            <p class="article__like">172 &hearts;</p>
+            <p class="article__date">
+              <time datetime="2021-01-15" class="article__time">januari'15</time> south france
+            </p>
+          </div>
+          <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste tenetur
+            ipsum repudiandae quidem eveniet expedita labore, minus odio temporibus cum illo consectetur itaque nostrum,
+            incidunt nihil recusandae cupiditate excepturi.</p>
+        </div>
+        <div class="article__block">
+          <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste tenetur
+            ipsum repudiandae quidem eveniet expedita labore, minus odio temporibus cum illo consectetur itaque nostrum,
+            incidunt nihil recusandae cupiditate excepturi.</p>
+          <div class="article__view  article__view_even">
+            <p class="article__like">172 &hearts;</p>
+            <p class="article__date">
+              <time datetime="2021-01-15" class="article__time">januari'15</time> south america
+            </p>
+          </div>
+        </div>
+        <div class="article__block ">
+          <div class="article__view  article__view_odd">
+            <p class="article__like">172 &hearts;</p>
+            <p class="article__date">
+              <time datetime="2021-01-15" class="article__time">januari'15</time> south france
+            </p>
+          </div>
+          <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste tenetur
+            ipsum repudiandae quidem eveniet expedita labore, minus odio temporibus cum illo consectetur itaque nostrum,
+            incidunt nihil recusandae cupiditate excepturi.</p>
+        </div>
+        <div class="article__block">
+          <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste tenetur
+            ipsum repudiandae quidem eveniet expedita labore, minus odio temporibus cum illo consectetur itaque nostrum,
+            incidunt nihil recusandae cupiditate excepturi.</p>
+          <div class="article__view  article__view_even">
+            <p class="article__like">172 &hearts;</p>
+            <p class="article__date">
+              <time datetime="2021-01-15" class="article__time">januari'15</time> south america
+            </p>
+          </div>
+        </div>
+        <div class="subscription">
+          <label for='mail' class="subscription__text">subscribe to our <span>newsletter</span></label>
+          <div class="subscription__wrap">
+            <form action="#" class="subscription__form input__form">
+              <input class="subscription__mail input__mail" type="email" id="mail"
+                placeholder="Enter your e-mail address">
+              <input class="subscription__submit input__submit" type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <section class="footer__block_section">
+          <h3 class="footer__block_section_title">black & white</h3>
+          <p class="footer__block_section_text">consequuntur magni dolores ratione
+            voluptatem sequi nescue porro quisquam
+            est, qui d sum quia dolor sit amet, cons
+            sum quia sum quia</p>
+        </section>
+        <section class="footer__block_section">
+          <h3 class="footer__block_section_title">last tweet</h3>
+          <p class="footer__block_section_text">...aerat vluptatem. ut eni et illi dolore
+            magnam aliqua et aerat voluptatem. Utils
+            eni tils et al is minima veniam <br>
+            <span>3 hours ago</span>
+          </p>
+        </section>
+        <section class="footer__block_section">
+          <h3 class="footer__block_section_title">contact</h3>
+          <div class="footer__block_section_text">
+            <address>www.loremipsumdolar.nl
+              182 AB Your Street Name</address>
+            <a href="mailto:e-mail@loremipsum.com">e-mail@loremipsum.com</a>
+            <a href="tel:+(121)012345679">+(121)01 23 45 679</a>
+          </div>
+        </section>
+        <section class="footer__block_section">
+          <h3 class="footer__block_section_title">newsletter</h3>
+          <p class="footer__block_section_text">Neque porro quiaquam eist, im ipsum quia
+            dolor sit amettur, adipisci velit,</p>
+          <div class="subscription__wrap">
+            <form action="#" class="subscription__form footer__form">
+              <input class="subscription__mail footer__mail" type="email" id="my-mail"
+                placeholder="Enter your e-mail address">
+              <input class="subscription__submit footer__submit" type="submit" value="Subscribe">
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="footer__credentials">
+        <p class="footer__copyright">&copy; 2015 Ruben Storm</p>
+        <div class="footer__menu">
+          <nav class="footer__nav_menu nav_menu">
+            <ul class="header__nav_menu_list">
+              <li class="footer__nav_menu_item menu_item"><a href="#" class="footer__nav_menu_item_link">home</a></li>
+              <li class="footer__nav_menu_item menu_item"><a href="#" class="footer__nav_menu_item_link">about</a></li>
+              <li class="footer__nav_menu_item menu_item"><a href="#" class="footer__nav_menu_item_link">vacancies</a></li>
+              <li class="footer__nav_menu_item menu_item"><a href="#" class="footer__nav_menu_item_link">shop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
