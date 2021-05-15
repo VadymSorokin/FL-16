@@ -1,0 +1,28 @@
+/*Your code goes here*/
+/*Black: #111
+Grey: #525252
+white
+corallight
+coral */
+.bg-black{
+	background-color: #111;
+}
+.bg-gray {
+	background-color: #525252;
+}
+
+.clr-w {
+	color: white;
+}
+.bg-btn{
+	background-color: coral;
+}
+.fsu{
+	font-size: 23px;
+}
+.fw-b{
+	font-weight: bold;
+}
+.fz-title	{
+	font-size: 60px;
+}
